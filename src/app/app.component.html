@@ -1,3 +1,10 @@
-<h1>
-  {{title}}
-</h1>
+<section class="pricing py-5">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-lg-4" *ngFor="let product of productData">
+      <app-test [title]="product.title" [price]="product.price" [users]="product.users" [storage]="product.storage" [subdomain]="product.subdomain" [users]="product.users" [c1]="product.c1" [c2]="product.c2" [c3]="product.c3" [c4]="product.c4" [check1]="product.check1" [check2]="product.check2" [check3]="product.check3" [check4]="product.check4" [check5]="product.check5"></app-test>
+      </div>
+     </div>
+     </div>
+</section>
